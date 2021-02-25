@@ -20,16 +20,26 @@ export class InicialPage implements OnInit {
   }
 
 
-
-
-  async outrapragina() { //Tela de load
+  async pagecliente(){
     let aguarde = await this.loadingCtrl.create({
       message: 'Aguarde por favor...',
       duration: 900,
     });
 
     aguarde.present(); //Iniciar a tela de load.
-    this.navCtrl.navigateRoot('login'); //Rota, a string inserido nas aspas será direcionado.
+    this.navCtrl.navigateRoot('login-prof'); //Rota, a string inserido nas aspas será direcionado.
+    aguarde.present(); //Encerrar a tela de load.
+  }
+
+
+  async pageprofissional() { //Tela de load
+    let aguarde = await this.loadingCtrl.create({
+      message: 'Aguarde por favor...',
+      duration: 900,
+    });
+
+    aguarde.present(); //Iniciar a tela de load.
+    this.navCtrl.navigateRoot('login-prof'); //Rota, a string inserido nas aspas será direcionado.
     aguarde.present(); //Encerrar a tela de load.
   }
 }

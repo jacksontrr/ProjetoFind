@@ -1,111 +1,48 @@
 <ion-content>
 
-  <ion-row>
-    <ion-col size="6">
-      <ion-button class="ion-text-center" (click)="aparecerprof()" style="margin-top: 5%;" color="primary"
-        expand="block">Profissional</ion-button>
-    </ion-col>
-    <ion-col size="6">
-      <ion-button class="ion-text-center" (click)="aparecercli()" style="margin-top: 5%;" color="primary"
-        expand="block">Cliente</ion-button>
-    </ion-col>
-  </ion-row>
-
-
-  <!-- formulario do meme -->
-  <div id="memediv">
     <ion-item>
       <ion-label position="floating">E-mail</ion-label>
-      <ion-input [(ngModel)]="temporarioemail" type="E-mail" required></ion-input>
+      <ion-input type="E-mail" required></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Senha</ion-label>
-      <ion-input [(ngModel)]="temporariosenha" type="password" required></ion-input>
-    </ion-item>
-  </div>
-
-
-
-  <!-- formulario do Proficional -->
-  <div id="formcadastroprof">
-    <ion-item>
-      <ion-label position="floating">E-mail</ion-label>
-      <ion-input type="E-mail" [(ngModel)]="usuarioprof.email" required></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Senha</ion-label>
-      <ion-input type="password" [(ngModel)]="usuarioprof.senha" required></ion-input>
+      <ion-input type="password" required></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating" >Nome</ion-label>
-      <ion-input type="text" [(ngModel)]="usuarioprof.nome" required></ion-input>
+      <ion-input type="text" required></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Endereço</ion-label>
-      <ion-input type="text" [(ngModel)]="usuarioprof.endereco" required></ion-input>
+      <ion-input type="text" required></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Telefone</ion-label>
-      <ion-input type="text" [(ngModel)]="usuarioprof.telefone" required></ion-input>
+      <ion-input type="text" required></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">CPF/CNPJ</ion-label>
-      <ion-input type="text" [(ngModel)]="usuarioprof.CPFCNPJ" required></ion-input>
+      <ion-input type="text" required></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Nome da Empresa</ion-label>
-      <ion-input type="text" [(ngModel)]="usuarioprof.empresa" required></ion-input>
-    </ion-item>
-  </div>
-
-
-  <!-- formulario do cliente -->
-  <div id="formcadastrocli">
-    <ion-item>
-      <ion-label position="floating">E-mail</ion-label>
-      <ion-input type="E-mail" [(ngModel)]="usuariocli.email" required></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Senha</ion-label>
-      <ion-input type="password" [(ngModel)]="usuariocli.senha" required></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Nome</ion-label>
-      <ion-input type="text" [(ngModel)]="usuariocli.nome" required></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Endereço</ion-label>
-      <ion-input type="text" [(ngModel)]="usuariocli.endereco" required></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Telefone</ion-label>
-      <ion-input type="text" [(ngModel)]="usuariocli.telefone" required></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">CPF</ion-label>
-      <ion-input type="text" [(ngModel)]="usuariocli.CPF" required></ion-input>
+      <ion-input type="text" required></ion-input>
     </ion-item>
 
 
-  </div>
+
 
 </ion-content>
+
+  <!-- Botão do Profissional -->
 <ion-row>
 
-  <!-- Botão do cliente -->
-  <ion-col id="botaocli" size="6">
-    <ion-button class="ion-text-center" expand="block" color="success" (click)="registrarcli(usuariocli)" >Continuar</ion-button>
-  </ion-col>
-    <!-- Botão do Profissional -->
+
   <ion-col id="botaoprof" size="6">
-    <ion-button class="ion-text-center" expand="block" color="success" (click)="registrarprof(usuarioprof)" >Continuar</ion-button>
-  </ion-col>
-  <!-- botão do meme -->
-  <ion-col id="memebotao" size="6">
-    <ion-button class="ion-text-center" expand="block" color="success" (click)="registrarprof()">Continuar</ion-button>
+    <ion-button class="ion-text-center" expand="block" color="success"  >Continuar</ion-button>
   </ion-col>
 
   <ion-col size="6">
-    <ion-button class="ion-text-center" expand="block" (click)="outrapragina()">Voltar</ion-button>
+    <ion-button class="ion-text-center" expand="block">Voltar</ion-button>
   </ion-col>
 </ion-row>
